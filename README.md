@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [project description](#projectdescription)
+* [project description](#project_description)
 * [usage](#usage)
 * [dependencies](#dependencies)
 
@@ -15,7 +15,7 @@ To get started, open `js/app.js` and start building out the app's functionality
 
 For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
 
-## projectdescription
+## project_description
 
 This project requires  to build a multi-section landing page, with a dynamically updating navigational menu based on the amount of content that is added to the page.
 
