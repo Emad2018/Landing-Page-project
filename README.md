@@ -22,6 +22,7 @@ This project requires  to build a multi-section landing page, with a dynamically
 the starter project  [link](https://github.com/udacity/fend/tree/refresh-2019) 
 
 By default the page contains 4 sections 
+
 <img src="images/section.png" width="480" alt="Combined Image" />
 
 you can move between by scrolling or clicking on the section number from the top Nav
@@ -38,6 +39,7 @@ you can add much section you need from the bottom window and when you submit the
 if you missed the title or the content, no section will be added and erro message will apper.
  
 <img src="images/notitle.png" width="480" alt="Combined Image" />
+
 <img src="images/missedtitle.png" width="480" alt="Combined Image" />
 
 ## dependencies
