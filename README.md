@@ -4,7 +4,6 @@
 
 * [Instructions](#instructions)
 * [project description](#project_description)
-* [usage](#usage)
 * [dependencies](#dependencies)
 
 ## Instructions
