@@ -22,27 +22,27 @@ the starter project  [link](https://github.com/udacity/fend/tree/refresh-2019)
 
 By default the page contains 4 sections 
 
-![default]("./images/section.png")
+![default](./images/section.png)
 
 you can move between by scrolling or clicking on the section number from the top Nav
 
-![move to section.png]("./images/move to section.png")
+![move to section.png](./images/move to section.png)
 
 
 you can add much section you need from the bottom window and when you submit the nav bar also will be automatically updated
 
-![add sections.png]("./images/add sections.png")
+![add sections.png](./images/add sections.png)
 
 ![update]("./images/update.png")
 
-![updatesection5]("./images/updatesection5.png")
+![updatesection5](./images/updatesection5.png)
 
 
 if you missed the title or the content, no section will be added and erro message will apper.
 
-![notitle]("./images/notitle.png")
+![notitle](./images/notitle.png)
 
-![missedtitle](./"images/missedtitle.png")
+![missedtitle](./images/missedtitle.png)
 
 
 ## dependencies
