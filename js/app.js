@@ -254,7 +254,7 @@ window.addEventListener("scroll", function (ev) {
 
 
     }
-    var current = main_section.getElementsByClassName(" your-active-class");
+    let current = main_section.getElementsByClassName(" your-active-class");
 
     if (current.length > 0) {
         current[0].className = current[0].className.replace(" your-active-class", "");
