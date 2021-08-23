@@ -33,7 +33,7 @@ you can add much section you need from the bottom window and when you submit the
 
 ![add sections.png](./images/add sections.png)
 
-![update]("./images/update.png")
+![update](./images/update.png)
 
 ![updatesection5](./images/updatesection5.png)
 
