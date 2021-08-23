@@ -23,7 +23,8 @@ let navbar__list = document.querySelector("#navbar__list");
 let main_section = document.querySelector("main");
 
 
-let page_sections = [
+
+let page_sections_arr = [
     {
         "title": "Section 1",
         "content":
@@ -101,9 +102,9 @@ function build_sections() {
     let text = "";
 
 
-    for (let i = 0; i < page_sections.length; i++) {
+    for (let i = 0; i < page_sections_arr.length; i++) {
 
-        let section = page_sections[i];
+        let section = page_sections_arr[i];
         let section_title = section.title;
         let section_content = section.content;
         let section_id = "section" + (i + 1)
@@ -129,10 +130,10 @@ function build_sections() {
 function add_newsection() {
     let text = "";
 
-    let section = page_sections[page_sections.length - 1];
+    let section = page_sections_arr[page_sections_arr.length - 1];
     let section_title = section.title;
     let section_content = section.content;
-    let section_id = "section" + page_sections.length;
+    let section_id = "section" + page_sections_arr.length;
 
     text = new_section.replace("%id%", section_id).replace("%data-nav%", section_title);
     main_section.insertAdjacentHTML('beforeend', text);
@@ -159,7 +160,8 @@ function add_newsection() {
 
 // build the nav
 function build_navbar() {
-    for (let i = 0; i < page_sections.length; i++) {
+    let page_sections = document.querySelectorAll("main section");
+    for (let i = 0; i < page_sections_arr.length; i++) {
 
         let section_id = "section" + (i + 1)
         let newAElement = document.createElement('a');
@@ -167,7 +169,9 @@ function build_navbar() {
 
         newAElement.innerText = section_id;
         // Scroll to section on link click
-        newAElement.setAttribute("href", "#" + section_id);
+        newliElement.addEventListener("click", () => {
+            page_sections[i].scrollIntoView({ behavior: "smooth" })
+        })
         newAElement.setAttribute("class", "menu__link");
         newliElement.appendChild(newAElement);
         navbar__list.appendChild(newliElement);
@@ -177,13 +181,15 @@ function build_navbar() {
 }
 function add_newnavbar() {
 
-
+    let page_sections = document.querySelectorAll("main section");
     let section_id = "section" + page_sections.length
     let newAElement = document.createElement('a');
     let newliElement = document.createElement('li');
     newAElement.innerText = section_id;
     // Scroll to section on link click
-    newAElement.setAttribute("href", "#" + section_id);
+    newliElement.addEventListener("click", () => {
+        page_sections[i].scrollIntoView({ behavior: "smooth" })
+    })
     newAElement.setAttribute("class", "menu__link");
 
     newliElement.appendChild(newAElement);
@@ -193,10 +199,12 @@ function add_newnavbar() {
 
 }
 
+
+
 // Add class 'active' to section when near top of viewport
 function active_navbar(id) {
-    let current_active_li = document.querySelectorAll("#navbar__list li.active");
     let nav_li = document.querySelectorAll("#navbar__list li");
+    let current_active_li = document.querySelectorAll("#navbar__list li.active");
     let section_num = id.replace("section", "");
 
     if (current_active_li.length > 0) {
@@ -228,7 +236,7 @@ addSectionButton.addEventListener('click', function () {
     }
     else {
         errorHeader.innerText = "";
-        page_sections.push({ "title": new_title.value, "content": new_content.value });
+        page_sections_arr.push({ "title": new_title.value, "content": new_content.value });
         add_newsection();
         add_newnavbar();
         // add_neweventlistner();

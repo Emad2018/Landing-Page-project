@@ -4,6 +4,7 @@
 
 * [Instructions](#instructions)
 * [project description](#project_description)
+* [overview](#overview)
 * [dependencies](#dependencies)
 
 ## Instructions
@@ -20,6 +21,9 @@ This project requires  to build a multi-section landing page, with a dynamically
 
 the starter project  [link](https://github.com/udacity/fend/tree/refresh-2019) 
 
+All the changes are done by [Abdelrahman Emad](https://github.com/Emad2018) 
+
+## overview
 By default the page contains 4 sections 
 
 ![default](./images/section.png)
